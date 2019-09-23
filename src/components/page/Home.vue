@@ -1,10 +1,15 @@
 <template>
-
-    <el-container>
-        <div id="Nav"><Nav/></div>
-        <div id="Header"><Header/></div>
-        <div id="ItService"><ItService/></div>
-    </el-container>
+    <div class="container">
+        <Nav/>
+        <Header/>
+        <ItService/>
+        <MarketingService/>
+        <ReklamaService/>
+        <DesignService/>
+        <VideoService/>
+        <BlokAbout/>
+        <Footer/>
+    </div>
 
  
 </template>
@@ -13,11 +18,24 @@
 import Header from '@/components/Header'
 import Nav from '@/components/Nav'
 import ItService from '@/components/ItService'
+import MarketingService from '@/components/MarketingService'
+import ReklamaService from '@/components/ReklamaService'
+import DesignService from '@/components/DesignService'
+import VideoService from '@/components/VideoService'
+import BlokAbout from '@/components/BlokAbout'
+import Footer from '@/components/Footer'
+
 export default {
     components:{
         Nav,
         Header,
-        ItService
+        ItService,
+        MarketingService,
+        ReklamaService,
+        DesignService,
+        VideoService,
+        BlokAbout,
+        Footer
     }
 }
 </script>
