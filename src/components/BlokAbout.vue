@@ -31,7 +31,8 @@ export default {
 
 <style scoped>
 .container{
-    background: #000000
+    background: #000000;
+    margin-top: 50px;
 }
 .BlokAboutLeft{
      padding: 20px;
@@ -51,7 +52,7 @@ export default {
     width: 100%;
 }
 .BlokAboutRight{
-    background: url(../assets/img/970x970/1.png) center center no-repeat;
+    /* background: url(static/img/970x970/1.png) center center no-repeat; */
     padding: 20px;
     height: 100%;
 

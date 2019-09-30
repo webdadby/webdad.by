@@ -1,8 +1,8 @@
 <template>
-    <div class="container img_header" data-parallax="scroll">
+    <div class="container img_header" :style="{ backgroundImage: 'url(' + image + ')' }" data-parallax="scroll">
         <div class="discription">
-	        <h1></h1>
-	        <p>Разработка програмного комплекса</p>
+	        <h1>{{h1}}</h1>
+	        <p>{{description}}</p>
             <el-button type="warning" round>Оставить заявку</el-button>
         </div>
     </div>
@@ -10,6 +10,18 @@
 
 <script>
 export default {
+    props: {
+    title: String,
+    h1: String,
+    description: String,
+    likes: Number,
+    isPublished: Boolean,
+    commentIds: Array,
+    author: Object,
+    callback: Function,
+    contactsPromise: Promise, // или любой другой конструктор
+    image :String 
+}
     
 }
 </script>
@@ -17,14 +29,14 @@ export default {
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50vh;
+    grid-template-rows: 70vh;
     width: 100%;
     height: 50%;
     left: 0;
     top: 0;
 }
-.img_header{
-    background: url(../assets/img/1920x1080/2.png) center center no-repeat;
+ .img_header{
+    background-image: center center no-repeat;
 }
 h1{
     font-size: 50px;

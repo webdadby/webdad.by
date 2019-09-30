@@ -3,23 +3,22 @@
      <div class="container">
             <div class="menu-container">
                 <div class="logo">
-                    <a class="logo-wrap" href="index.html">
-                        <img class="logo-img logo-img-main" src="../assets/img/logo1.png" alt="Asentus Logo">
-                        <img class="logo-img logo-img-active" src="../assets/img/logo2.png" alt="Asentus Logo">
+                    <a class="logo-wrap" href="/">
+                        <img class="logo-img logo-img-main" src="static/img/logo1.png" alt="Asentus Logo">
+                        <img class="logo-img logo-img-active" src="static/img/logo2.png" alt="Asentus Logo">
                     </a>
                 </div>
             </div>
             <div class="menu-container">
                 <ul class="navbar-nav navbar-nav-right">
-                        <li class="nav-item"><a class="nav-item-child nav-item-hover active"
-                                                href="index.html">Главная</a></li>
-                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="pricing.html">Pricing</a>
+                        <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="/">Главная</a></li>
+                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/product">Продукты</a>
                         </li>
-                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">Продукты</a>
+                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/partners">Партнеры</a></li>
+                        <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">Вакансии</a>
                         </li>
-                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.html">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">Contact</a>
+                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.html">FAQ</a></li> -->
+                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/contact">Контакты</a>
                         </li>
                     </ul>
             </div>

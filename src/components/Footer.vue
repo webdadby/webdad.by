@@ -34,10 +34,10 @@
         </el-row>
         <el-row class="copyright">
             <el-col :span="10">
-                <img class="footer-logo" src="../assets/img/logo2.png" alt="Asentus Logo">
+                <img class="footer-logo" src="static/img/logo2.png" alt="Asentus Logo">
             </el-col>
             <el-col :span="10">
-                <p><a class="color-base fweight-700" href="http://www.keenthemes.com/">Copyright © Web Dad 2019</a></p>
+                <p><a class="color-base fweight-700" href="www.webdad.by">Copyright © Web Dad 2019</a></p>
             </el-col>
         </el-row>
     </footer>
@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 footer{
-    background: url(../assets/img/1920x1080/2.png) center center no-repeat;
+    background: url('../../static/img/1920x1080/2.png') center center no-repeat;
     padding-top: 50px;
 }
 .Links{

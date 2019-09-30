@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style>
+@import url("hover.css/css/hover-min.css");
 #app {
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;

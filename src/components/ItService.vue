@@ -3,51 +3,53 @@
         <div class="caption">
             <el-row :gutter="20">
                 <el-col :span="4"  :offset="3">
-                    <h1>IT услуги</h1>
+                    <h1 class="">IT услуги</h1>
                 </el-col>
             </el-row>
         </div>
         <div class="content">
             <el-row :gutter="20">
-                <el-col :span="4"  :offset="4">
+                <el-col class="blok animated" :span="4"  :offset="4">
                     <div class="service-element">
                         <i class="fab fa-codepen"></i>
                     </div>
-                    <div class="grid-content bg-purple">
-                        <h3>Разработка программного обеспечения</h3>
+                    <div class="grid-content">
+                        <h3>Разработка ПО и мобильных приложений</h3>
                         <p>Уникальный продукт которым гордится наша команда. Готовы взяться за проект без четкого технического задания. Идеальный вариант для больших проектов с бесконечным циклом разработки.</p>
                     </div>
-                    <a href="" class="content-wrapper-link"></a>
+                    
+                    <a href="/appdev" class="content-wrapper-link"></a>
                 </el-col>
-                <el-col :span="4">
+                <el-col class="blok" :span="4">
                     <div class="service-element">
                         <i class="fas fa-project-diagram"></i>
                     </div>
                     <div class="grid-content bg-purple">
-                        <h3>Корпоративные программные решения</h3>
+                        <h3>Решение проблем бизнеса с помощью ИТ</h3>
                         <p class="margin-b-5">Готовы предложить ИТ решение трудностей вашего бизнеса. Создадим уникальные инструменты, как для сотрудников, так и для клиентов. Наши решения это нечто большее чем стандартные CRM & ERP.</p>
                     </div>
-                    <a href="" class="content-wrapper-link"></a>
+                    <a href="/businesssolve" class="content-wrapper-link"></a>
                     </el-col>
-                <el-col :span="4">
+                <el-col class="blok" :span="4">
                     <div class="service-element">
-                        <i class="fas fa-mobile"></i>
+                        <i class="far fa-file-code"></i>
                     </div>
                     <div class="grid-content bg-purple">
-                        <h3>Разработка мобильных </br>приложений</h3>
+                        <h3>Доработка существующих проектов</h3>
                         <p class="margin-b-5">Готовы предложить ИТ решение трудностей вашего бизнеса. Создадим уникальные инструменты, как для сотрудников, так и для клиентов. Наши решения это нечто большее чем стандартные CRM & ERP.</p>
                     </div>
-                    <a href="" class="content-wrapper-link"></a>
+                    <router-link to="/continuesdev" class="content-wrapper-link"></router-link>
                     </el-col>
-                <el-col :span="4">
+                <el-col class="blok" :span="4">
                     <div class="service-element">
                         <i class="fas fa-mobile"></i>
                     </div>
                     
                     <div class="grid-content bg-purple">
-                        <h3>Разработка веб-приложений/сайтов</h3>
+                        <h3>Разработка сайтов</h3>
                         <p class="margin-b-5">Разработка веб-приложений с помощью технического задания. Создаем продукты под ключ. Разработка сайтов и порталов на платформах Bitrix, Modx, Joomla и д.р. Публикуем сайт на домене и хостинге или VDS. </p>
                      </div>
+                     <a href="/sitedev" class="content-wrapper-link"></a>
                      </el-col>
             </el-row>
         </div>
@@ -63,6 +65,20 @@ export default {
 </script>
 
 <style scoped>
+.animated{
+   background:rgb(55, 114, 255) none repeat scroll 0% 0%;
+   text-align: left;
+   color: #fff;
+   height: 400px;
+}
+.grid-content{
+    padding: 10px 30px 20px 30px;
+    text-align: left;
+}
+.service-element{
+    padding: 20px 30px 0px 30px;
+    text-align: left;
+}
 .container1{
     display: grid;
     grid-template-columns: 100%;
@@ -70,7 +86,9 @@ export default {
 i{
     font-size: 50px;
 }
-
+.blok{
+    position: inherit;
+}
 .content-wrapper-link{
     position: absolute;
     top: 0;

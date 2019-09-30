@@ -8,8 +8,8 @@
             </el-row>
         </div>
         <div class="content">
-            <el-row :gutter="20">
-                <el-col :span="4"  :offset="4">
+            <el-row  :gutter="20">
+                <el-col class="blok" :span="4"  :offset="4">
                     <div class="service-element">
                         <i class="fab fa-yandex-international"></i>
                     </div>
@@ -19,7 +19,7 @@
                     </div>
                     <a href="#" class="content-wrapper-link"></a>
                 </el-col>
-                <el-col :span="4">
+                <el-col class="blok" :span="4">
                     <div class="service-element">
                         <i class="fas fa-icons"></i>
                     </div>
@@ -29,7 +29,7 @@
                     </div>
                     <a href="" class="content-wrapper-link"></a>
                     </el-col>
-                <el-col :span="4">
+                <el-col class="blok animated " :span="4">
                     <div class="service-element">
                        <i class="fas fa-poll"></i>
                     </div>
@@ -39,7 +39,7 @@
                     </div>
                     <a href="" class="content-wrapper-link"></a>
                     </el-col>
-                <el-col :span="4">
+                <el-col class="blok" :span="4">
                     <div class="service-element">
                         <i class="fas fa-thumbs-up"></i>
                     </div>
@@ -68,8 +68,24 @@ export default {
     display: grid;
     grid-template-columns: 100%;
 }
+.animated{
+   background: #79cc64;
+   text-align: left;
+   color: #fff;
+}
+.grid-content{
+    padding: 10px 30px 20px 30px;
+    text-align: left;
+}
+.service-element{
+    padding: 20px 30px 0px 30px;
+    text-align: left;
+}
 i{
     font-size: 50px;
+}
+.blok{
+    position: inherit;
 }
 
 .content-wrapper-link{

@@ -9,7 +9,7 @@
         </div>
         <div class="content">
             <el-row :gutter="20">
-                <el-col :span="4"  :offset="4">
+                <el-col class="blok" :span="4"  :offset="4">
                     <div class="service-element">
                         <i class="fas fa-chart-bar"></i>
                     </div>
@@ -17,9 +17,9 @@
                         <h3>Анализ конкурентов</h3>
                         <p class="margin-b-5">Один из первых и самых главных шагов перед тем, как определиться с маркетинговой стратегией компании.</p>
                     </div>
-                    <a href="" class="content-wrapper-link"></a>
+                    <a href="/CompetitorAnalysis" class="content-wrapper-link"></a>
                 </el-col>
-                <el-col :span="4">
+                <el-col class="blok animated" :span="4">
                     <div class="service-element">
                         <i class="fas fa-bullhorn"></i>
                     </div>
@@ -27,9 +27,9 @@
                         <h3>Маркетинг на аутсорсинге</h3>
                         <p>Непосредственная передача маркетинговых функций в компанию, которая специализируется в данной области</p>
                     </div>
-                    <a href="" class="content-wrapper-link"></a>
+                    <a href="/marketing-na-autsorsinge" class="content-wrapper-link"></a>
                     </el-col>
-                <el-col :span="4">
+                <el-col class="blok" :span="4">
                     <div class="service-element">
                         <i class="fas fa-key"></i>
                     </div>
@@ -39,7 +39,7 @@
                     </div>
                     <a href="" class="content-wrapper-link"></a>
                     </el-col>
-                <el-col class="service" :span="4">
+                <el-col class="blok" :span="4">
                     <div class="service-element">
                         <i class="fas fa-wifi"></i>
                     </div>
@@ -69,11 +69,24 @@ export default {
     display: grid;
     grid-template-columns: 100%;
 }
+.animated{
+   background:rgb(23, 190, 187) none repeat scroll 0% 0%;
+   text-align: left;
+   color: #fff;
+}
+.grid-content{
+    padding: 10px 30px 20px 30px;
+    text-align: left;
+}
+.service-element{
+    padding: 20px 30px 0px 30px;
+    text-align: left;
+}
 i{
     font-size: 50px;
 }
-.service{
-    visibility: visible;
+.blok{
+    position: inherit;
 }
 
 .content-wrapper-link{

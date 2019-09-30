@@ -3,13 +3,13 @@
         <div class="caption">
             <el-row :gutter="20">
                 <el-col :span="4"  :offset="3">
-                    <h1>Реклама</h1>
+                    <h1>Видеореклама</h1>
                 </el-col>
             </el-row>
         </div>
         <div class="content">
-            <el-row :gutter="20">
-                <el-col :span="8"  :offset="4">
+            <el-row c :gutter="20">
+                 <el-col class="blok animated" :span="8" :offset="4">
                     <div class="service-element">
                         <i class="fab fa-youtube"></i>
                     </div>
@@ -17,9 +17,9 @@
                         <h3>Профессиональное создание рекламных роликов</h3>
                         <p>Наша команда готова взяться за создание видео рекламы любой сложности</p>
                     </div>
-                    <a href="" class="content-wrapper-link"></a>
+                    <a href="#" class="content-wrapper-link"></a>
                 </el-col>
-                <el-col :span="4">
+                <el-col class="blok" :span="4">
                     <div class="service-element">
                         <i class="fas fa-video"></i>
                     </div>
@@ -27,9 +27,9 @@
                         <h3>Монтаж, 2D, 3D графика, Сьемка</h3>
                         <p>Комплексное ведение страниц в социальных сетях</p>
                     </div>
-                    <a href="" class="content-wrapper-link"></a>
-                    </el-col>
-                <el-col :span="4">
+                    <a href="#" class="content-wrapper-link"></a>
+                </el-col>
+                <el-col class="blok animated" :span="4">
                     <div class="service-element">
                         <i class="fas fa-photo-video"></i>
                     </div>
@@ -37,8 +37,8 @@
                         <h3>Аниминирование видео</h3>
                         <p class="margin-b-5">Поможем поднять Ваш интернет-ресурс в поисковой выдачи Yandex и Google. Тем самым увеличим поток посетителей сайта а это потенциальные клиенты.</p>
                     </div>
-                    <a href="" class="content-wrapper-link"></a>
-                    </el-col>
+                    <a href="#" class="content-wrapper-link"></a>
+                </el-col>
             </el-row>
         </div>
     </div>
@@ -57,10 +57,25 @@ export default {
     display: grid;
     grid-template-columns: 100%;
 }
+.animated{
+   background: #ff715b;
+   text-align: left;
+   color: #fff;
+}
+.grid-content{
+    padding: 10px 30px 20px 30px;
+    text-align: left;
+}
+.service-element{
+    padding: 20px 30px 0px 30px;
+    text-align: left;
+}
 i{
     font-size: 50px;
 }
-
+.blok{
+    position: inherit;
+}
 .content-wrapper-link{
     position: absolute;
     top: 0;

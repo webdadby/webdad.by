@@ -1,7 +1,8 @@
 <template>
     <div class="container">
         <Nav/>
-        <Header/>
+        <HeaderHome/>
+        <Breadcrumb/>
         <ItService/>
         <MarketingService/>
         <ReklamaService/>
@@ -15,8 +16,10 @@
 </template>
 
 <script>
-import Header from '@/components/Header'
+import HeaderHome from '@/components/HeaderHome'
+
 import Nav from '@/components/Nav'
+import  Breadcrumb from '@/components/Breadcrumb'
 import ItService from '@/components/ItService'
 import MarketingService from '@/components/MarketingService'
 import ReklamaService from '@/components/ReklamaService'
@@ -28,7 +31,8 @@ import Footer from '@/components/Footer'
 export default {
     components:{
         Nav,
-        Header,
+        HeaderHome,
+        Breadcrumb,
         ItService,
         MarketingService,
         ReklamaService,
