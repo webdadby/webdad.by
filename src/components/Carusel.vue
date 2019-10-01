@@ -1,9 +1,10 @@
 <template>
-    <el-row :gutter="20">
-        <el-col class="BlokAboutLeft" :span="10">
-
+  <div class="container">
+    <el-row type="flex" class="row-bg" justify="center" :gutter="24">
+        <el-col class="BlokAboutLeft" :span="8">
+          <img src='/static/svg/3.svg'>
         </el-col>
-        <el-col class="BlokAboutRight" :span="15">
+        <el-col class="BlokAboutRight" :span="8">
             <el-carousel :interval="5000" direction="vertical" arrow="never">
                 <el-carousel-item v-for="item in description" :key="item">
                   <div>
@@ -15,29 +16,41 @@
             </el-carousel>
             </el-col>
     </el-row>
+  </div>
 </template>
 
 <style scoped>
   .el-carousel__item h3 {
-    color: #475669;
     font-size: 18px;
-    opacity: 0.75;
-    line-height: 300px;
+    line-height: 50px;
     margin: 0;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-
-  .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
+  h3{
+    font-size: 20px;
+    text-align: center;
+    color: #7793ed;
   }
-
-  .el-carousel__item:nth-child(2n+1) {
-    background-color: #d3dce6;
+  p{
+    text-align: center;
+    color: #7793ed;
+  }
+  img{
+    width: 100%;
   }
 </style>
 
 <script>
 export default {
+    props:{ 
+        description: Array,
+        header: String,
+        text: String,
+        },
     data(){
+    
     }
 }
 </script>

@@ -52,5 +52,6 @@ h1{
 }
 p{
     color: #fff;
+    width: 70%;
 }
 </style>

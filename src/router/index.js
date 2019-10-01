@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import Home from '@/components/page/Home'
 import Product from '@/components/page/Product'
 import Partners from '@/components/page/Partners'
 import Contact from '@/components/page/Contact'
+import Software from '@/components/page/Software'
 import Businesssolve from '@/components/page/service_page/Businesssolve'
 import Continuesdev from '@/components/page/service_page/Continuesdev'
 import CompetitorAnalysis from '@/components/page/service_page/competitorAnalysis'
@@ -22,6 +24,11 @@ export default new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
+    {
+      path: '/Software',
+      name: 'Software',
+      component: Software
+    },
     {
       path: '/contact',
       name: 'Contact',

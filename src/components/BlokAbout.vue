@@ -49,13 +49,13 @@ export default {
     color: #fff
 }
 .BlokAboutRight img{
-    width: 100%;
+    
+    
 }
 .BlokAboutRight{
-    /* background: url(static/img/970x970/1.png) center center no-repeat; */
-    padding: 20px;
-    height: 100%;
-
+    background-image: url('/static/img/970x970/1.png');
+    background-size: cover;
+    background-position: center;
 }
 </style>
 

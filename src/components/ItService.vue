@@ -1,15 +1,15 @@
 <template>
-    <div class="container1">
+    <div class="container">
         <div class="caption">
             <el-row :gutter="20">
                 <el-col :span="4"  :offset="3">
-                    <h1 class="">IT услуги</h1>
+                    <h1 class=""><router-link to="/Software" class="router-link">IT услуги</router-link></h1>
                 </el-col>
             </el-row>
         </div>
         <div class="content">
-            <el-row :gutter="20">
-                <el-col class="blok animated" :span="4"  :offset="4">
+            <el-row class="row-bg" :gutter="24">
+                <el-col class="blok animated" :xs="24" :span="6">
                     <div class="service-element">
                         <i class="fab fa-codepen"></i>
                     </div>
@@ -20,7 +20,7 @@
                     
                     <a href="/appdev" class="content-wrapper-link"></a>
                 </el-col>
-                <el-col class="blok" :span="4">
+                <el-col class="blok" :xs="24" :span="6">
                     <div class="service-element">
                         <i class="fas fa-project-diagram"></i>
                     </div>
@@ -30,7 +30,7 @@
                     </div>
                     <a href="/businesssolve" class="content-wrapper-link"></a>
                     </el-col>
-                <el-col class="blok" :span="4">
+                <el-col class="blok" :xs="24" :span="6">
                     <div class="service-element">
                         <i class="far fa-file-code"></i>
                     </div>
@@ -40,7 +40,7 @@
                     </div>
                     <router-link to="/continuesdev" class="content-wrapper-link"></router-link>
                     </el-col>
-                <el-col class="blok" :span="4">
+                <el-col class="blok" :xs="24" :span="6">
                     <div class="service-element">
                         <i class="fas fa-mobile"></i>
                     </div>
@@ -65,15 +65,23 @@ export default {
 </script>
 
 <style scoped>
+.content{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .animated{
    background:rgb(55, 114, 255) none repeat scroll 0% 0%;
    text-align: left;
    color: #fff;
-   height: 400px;
 }
 .grid-content{
     padding: 10px 30px 20px 30px;
     text-align: left;
+}
+.router-link{
+    color: black;
+    text-decoration: none;
 }
 .service-element{
     padding: 20px 30px 0px 30px;

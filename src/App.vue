@@ -12,6 +12,7 @@ export default {
 
 <style>
 @import url("hover.css/css/hover-min.css");
+
 #app {
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,5 +23,10 @@ export default {
 body{
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+@media (max-width: 930) {
+  
 }
 </style>

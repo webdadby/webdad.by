@@ -39,6 +39,7 @@ h1{
     line-height: 1.1;
 }
 .container{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -47,6 +48,7 @@ video{
 }
 .content{
     z-index: 1;
+    width: 100%;
 }
 .discription{
     position: absolute;
@@ -54,5 +56,14 @@ video{
     text-align: left;
     padding-left: 20%;
     color: #ffffff;
+}
+
+@media (max-width: 930px) {
+  h1{
+    font-size: 90em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+}
 }
 </style>
