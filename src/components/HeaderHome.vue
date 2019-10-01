@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 h1{
-    font-size: 90px;
+    font-size: 5rem;
     font-weight: 700;
     color: #fff;
     line-height: 1.1;
@@ -52,7 +52,7 @@ video{
 }
 .discription{
     position: absolute;
-    top: 35%;
+    top: 20rem;
     text-align: left;
     padding-left: 20%;
     color: #ffffff;
@@ -60,10 +60,26 @@ video{
 
 @media (max-width: 930px) {
   h1{
-    font-size: 90em;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
     line-height: 1.1;
 }
+  p{
+    font-size: 0.7rem;  
+    width: 50%;
+  }
+  .discription{
+    position: absolute;
+    top: 3rem;
+    text-align: left;
+    padding-left: 20%;
+    color: #ffffff;
+    
+} 
+  button{
+      font-size: 0.5rem;
+
+  }
 }
 </style>

@@ -44,7 +44,8 @@ export default {
 
 <style scoped>
 .navbar{
-    padding: 10px;
+    width: 100%;
+      padding: 10px;
     display: grid;
     background: #fff;
     top: 0;
@@ -58,6 +59,8 @@ export default {
     transition-duration: .3s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.7,1,.7,1);
+    margin-left:auto;
+  margin-right:auto;
 }
 
 .menu-container li {
@@ -87,6 +90,8 @@ export default {
 .container{
     display: grid;
     grid-template-columns: 50%  50%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .menu-container{
     display: block;
@@ -118,13 +123,14 @@ li a{
 @media (max-width: 990px) {
     
 .navbar{
-    background: none;}
+    background: none;
+    width: 100%;}
 .mobile-menu {
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 16px;
+  /* padding: 0 16px; */
   top: 0;
   background-color: #0a0a0a;
   left: 0;
