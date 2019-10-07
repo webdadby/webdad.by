@@ -1,0 +1,5 @@
+deployment:
+  tasks:
+    - export REPOPATH=/home/webdadby/repositories/webdad.by*
+    - export SITEPATH=/home/webdadby/public_html/
+    - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH 
