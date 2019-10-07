@@ -20,7 +20,7 @@
         p='Наша команда гордиться'
         :description="[
           {header:'INSTAPLUS.PRO', text:'', p:'Это онлайн программа для работы с Инстаграм с помощью которой можно за несколько минут настроить привлечение новой целевой аудитории. Подходит для продвижения бизнеса и раскрутки личных страниц.', image:'/static/img/397x300/instaplus.png', a:'https://instaplus.pro/r/7647cb'},
-          {header:'',text:'',  p:'', image:'', a:''},
+          {header:'SUPPORT.BY',text:'',  p:'Pазмещение сайтов и виртуальной инфраструктуры заказчика в облаке, колокейшн клиентского оборудования в дата-центрах, находящихся в Беларуси и Германии. ', image:'https://my.support.by/af_ban/250x250_support_shared.gif', a:'https://my.support.by/aff.php?aff=281'},
           {header:'',text:'', p:'', image:'', a:''}
         ]"/>
         <Footer/>

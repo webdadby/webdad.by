@@ -25,7 +25,9 @@ body{
   padding: 0;
   width: 100%;
 }
-
+.bg-fon{
+  background: #fafafa;
+}
 @media (max-width: 640px) {
    body {
      font-size:1.2rem;

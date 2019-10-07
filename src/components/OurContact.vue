@@ -1,14 +1,14 @@
 <template>
     <div class="container">
         <div class="content" >
-            <el-row :gutter="20">
-                <el-col :span="20"  :offset="3">
+            <el-row class="row-bg pd-0" :gutter="24">
+                    <el-col :span="20">
                     <h2 class="">{{h2}}</h2>
                     <p>{{p}}</p>
                 </el-col>
             </el-row>
-            <el-row   type="flex" class="row-bg" justify="center" :gutter="20">
-                <el-col class="blok" :span="6"  v-for="item in description" :key="item">
+            <el-row  class="row-bg" justify="center" :gutter="24">
+                <el-col class="blok" :xs="24" :span="8"  v-for="item in description" :key="item">
                     <div class="grid-content">
                         <div class="description">
 
@@ -22,7 +22,6 @@
                             <p></p>
                         </div>
                     </div>
-                    <a :href='item.a' target="_blank" class="content-wrapper-link"></a>
                 </el-col>
             </el-row>
         </div>
@@ -44,12 +43,11 @@ export default {
 </script>
 
 <style scoped>
-.animated{
-   text-align: left;
-   color: #fff;
-   height: 400px;
+.container {
+width:1400px;
+margin-left:auto;
+margin-right:auto;
 }
-
 
 h3{
     text-align: center;
@@ -61,6 +59,11 @@ h3 i{
 }
 h3 i:hover{
     color: #ffa500;
+}
+
+.grid-content{
+    background: #fff;
+    
 }
 h3 span{
     text-align: left;
@@ -76,7 +79,6 @@ p{
 ul{
     text-align: left;
     list-style-type: none;
-    
 }
 li i{
     font-size: 15px;
@@ -104,12 +106,12 @@ h2{
     display: grid;
     grid-template-columns: 100%;
 }
-
+/* 
 .blok{
     position: inherit;
     padding: 0px!important;
     margin-left: 10px
-}
+} */
 .content-wrapper-link{
     position: absolute;
     top: 0;
@@ -118,5 +120,39 @@ h2{
     bottom: 0;
     display: block;
     z-index: 3;
+}
+@media (max-width: 767px) {
+    .container{
+        max-width: 100%;
+    }
+    .row-bg{
+        padding: 20px;
+    }
+    .blok{
+        padding: 10px;
+    }
+    p{
+    /* color: #fff; */
+    font-size: 15px;
+    }
+    h2{
+    font-size: 1.5rem;
+    /* color: #fff;  fallback for old browsers */
+    }
+    ul{
+    text-align: left;
+    list-style-type: none;
+    padding: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+      /* стили для sm-устройств */
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+      /* стили для md-устройств */
+}
+@media (min-width: 1200px) {
+      /* стили для lg-устройств */
 }
 </style>

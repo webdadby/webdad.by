@@ -11,18 +11,18 @@
         h2='Эсклюзивные web-приложения'
         p='Наша команда гордиться'
         :description= "[
-          {header:'SmmBot',text:'в стадии разработки'},
-          {header:'ParerRealt',text:'в стадии разработки'},
-          {header:'',text:'в стадии разработки'},
+          {header:'SmmBot',text:'в стадии разработки', image:'/static/img/397x300/yandex.png'},
+          {header:'ParerRealt',text:'в стадии разработки', image:'/static/img/397x300/yandex.png'},
+          {header:'',text:'в стадии разработки', image:'/static/img/397x300/yandex.png'},
 
         ]"/>
         <OurProduct
         h2='Эсклюзивные web-приложения'
         p='Наша команда гордиться'
         :description= "[
-          {header:'SmmBot',text:'в стадии разработки'},
-          {header:'ParerRealt',text:'в стадии разработки'},
-          {header:'',text:'в стадии разработки'},
+          {header:'SmmBot',text:'в стадии разработки', image:'/static/img/397x300/yandex.png'},
+          {header:'ParerRealt',text:'в стадии разработки', image:'/static/img/397x300/yandex.png'},
+          {header:'',text:'в стадии разработки', image:'/static/img/397x300/yandex.png'},
 
         ]"/>
         <Footer/>
